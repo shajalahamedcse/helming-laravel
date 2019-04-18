@@ -44,7 +44,7 @@ pipeline {
       steps {
         sh '''
 
-          sh "/usr/local/bin/helm upgrade --install laravel-docker ./helm --set ImageTag=${BUILD_ID} --namespace=laravel"
+          sh "helm upgrade --install laravel-docker ./helm --set ImageTag=${BUILD_ID} --namespace=laravel"
         '''
       }
     }
