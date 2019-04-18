@@ -19,7 +19,9 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh " echo 'Sorry! I don't have test ' "
+        sh '''
+         echo 'Sorry! I don't have test '
+         '''
       }
     }
     stage('Image Release') {
