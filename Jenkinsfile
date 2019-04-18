@@ -32,9 +32,11 @@ pipeline {
       }
     }
     stage('Staging Deployment') {
+      /*
       when {
         expression { env.BRANCH_NAME == 'master' }
       }
+      */
       environment {
         RELEASE_NAME = 'laravelhello-staging'
 
@@ -46,6 +48,8 @@ pipeline {
         '''
       }
     }
+
+    /*
     stage('Deploy to Production?') {
       when {
         expression { env.BRANCH_NAME == 'master' }
@@ -57,6 +61,9 @@ pipeline {
         milestone(2)
       }
     }
+    */
+
+    /*
     stage('Production Deployment') {
       when {
         expression { env.BRANCH_NAME == 'master' }
@@ -72,5 +79,7 @@ pipeline {
         '''
       }
     }
+    */
+
   }
   }
