@@ -44,7 +44,7 @@ pipeline {
       steps {
         sh '''
 
-          helm install --namespace staging $RELEASE_NAME ./helm/laravel-docker --set image.tag=$BUILD_ID
+          sh "/usr/local/bin/helm upgrade --install laravel-docker ./helm --set ImageTag=${BUILD_ID} --namespace=laravel"
         '''
       }
     }
