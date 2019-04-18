@@ -44,7 +44,8 @@ pipeline {
       steps {
         sh '''
 
-          sh "helm install --name laravel --namespace=application ./helm/laralvel-docker --debug"
+          helm install --name laravel --namespace=application ./helm/laralvel-docker --debug
+
         '''
       }
     }
