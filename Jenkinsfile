@@ -43,8 +43,9 @@ pipeline {
       }
       steps {
         sh '''
-
-          helm install --name laravel --namespace=application ./helm/laralvel-docker --debug
+          helm repo add laravel-docker https://github.com/shajalahamedcse/helming-laravel/tree/master/helm
+          helm repo list
+          helm install helm/laravel-docker --name=laravel --debug
 
         '''
       }
