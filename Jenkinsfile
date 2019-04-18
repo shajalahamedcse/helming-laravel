@@ -43,7 +43,7 @@ pipeline {
       }
       steps {
         sh '''
-          . ./helm/helm-init.sh
+
           helm upgrade --install --namespace staging $RELEASE_NAME ./helm/laravel-docker --set image.tag=$BUILD_ID
         '''
       }
@@ -63,6 +63,8 @@ pipeline {
     }
     */
 
+
+
     /*
     stage('Production Deployment') {
       when {
@@ -74,12 +76,13 @@ pipeline {
       }
       steps {
         sh '''
-          . ./helm/helm-init.sh
+
           helm upgrade --install --namespace production $RELEASE_NAME ./helm/laravelhello --set image.tag=$BUILD_ID
         '''
       }
     }
     */
+
 
   }
   }
