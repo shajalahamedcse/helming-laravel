@@ -17,11 +17,7 @@ pipeline {
         '''
       }
     }
-    stage('Test') {
-      steps {
 
-      }
-    }
     stage('Image Release') {
       when {
         expression { env.BRANCH_NAME == 'master' }
