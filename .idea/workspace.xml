@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31c457f9-f2c2-4a40-b8d2-ca31f544d2f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-    </list>
+    <list default="true" id="31c457f9-f2c2-4a40-b8d2-ca31f544d2f7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="46" column="223" selection-start-line="46" selection-start-column="223" selection-end-line="46" selection-end-column="223" />
+            <state relative-caret-position="478">
+              <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -140,7 +138,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -194,8 +191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="46" column="223" selection-start-line="46" selection-start-column="223" selection-end-line="46" selection-end-column="223" />
+        <state relative-caret-position="478">
+          <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
         </state>
       </provider>
     </entry>
