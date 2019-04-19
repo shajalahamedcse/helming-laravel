@@ -46,7 +46,7 @@ pipeline {
       steps {
         sh '''
 
-          helm repo add laravel-docker-repo https://raw.githubusercontent.com/shajalahamedcse/helming-laravel/master/helm/laravel-docker/index.yaml
+          helm repo add laravel-docker-repo https://raw.githubusercontent.com/shajalahamedcse/helming-laravel/master/helm/laravel-docker/
           helm repo update
           helm repo list
           helm install laravel-docker-repo/laravel-docker --n laravel --debug
