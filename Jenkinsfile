@@ -49,7 +49,7 @@ pipeline {
           helm repo add laravel-docker-repo https://raw.githubusercontent.com/shajalahamedcse/helming-laravel/master/helm/laravel-docker/
           helm repo update
           helm repo list
-          helm init
+          helm init --wait
           helm install laravel-docker-repo/laravel-docker -n laravel --debug
 
         '''
