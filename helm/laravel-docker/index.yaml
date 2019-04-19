@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  laravel-docker:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-04-19T15:55:28.730605+06:00
+    description: A Helm chart for Kubernetes
+    digest: 168128ac9c1cfd37d7ed2fd3d5f70bbde6f43bf7f86345f117edaff6e3ce630d
+    name: laravel-docker
+    urls:
+    - laravel-docker-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-04-19T15:55:28.725918+06:00

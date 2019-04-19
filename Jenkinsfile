@@ -19,9 +19,11 @@ pipeline {
     }
 
     stage('Image Release') {
+    /*
       when {
         expression { env.BRANCH_NAME == 'master' }
       }
+      */
       steps {
 
           sh '''
