@@ -3,7 +3,7 @@ pipeline {
     IMAGE_NAME = 'shajalahamedcse/laravel-docker'
     BUILD_ID = "latest"
     DOCKER_USERNAME = "shajalahamedcse"
-    DOCKER_PASSWORD = "sha01688459466"
+    DOCKER_PASSWORD = ""
   }
 
   agent any
@@ -19,11 +19,7 @@ pipeline {
     }
 
     stage('Image Release') {
-    /*
-      when {
-        expression { env.BRANCH_NAME == 'master' }
-      }
-      */
+
       steps {
 
           sh '''
@@ -34,11 +30,7 @@ pipeline {
       }
     }
     stage('Staging Deployment') {
-      /*
-      when {
-        expression { env.BRANCH_NAME == 'master' }
-      }
-      */
+
       environment {
         RELEASE_NAME = 'laravelhello-staging'
 
@@ -56,39 +48,7 @@ pipeline {
       }
     }
 
-    /*
-    stage('Deploy to Production?') {
-      when {
-        expression { env.BRANCH_NAME == 'master' }
-      }
-      steps {
-        // Prevent any older builds from deploying to production
-        milestone(1)
-        input 'Deploy to Production?'
-        milestone(2)
-      }
-    }
-    */
 
-
-
-    /*
-    stage('Production Deployment') {
-      when {
-        expression { env.BRANCH_NAME == 'master' }
-      }
-      environment {
-        RELEASE_NAME = 'laravelhello-production'
-
-      }
-      steps {
-        sh '''
-
-          helm upgrade --install --namespace production $RELEASE_NAME ./helm/laravelhello --set image.tag=$BUILD_ID
-        '''
-      }
-    }
-    */
 
 
   }
